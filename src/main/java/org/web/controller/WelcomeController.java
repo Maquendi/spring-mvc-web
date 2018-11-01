@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class WelcomeController {
 	
 	
-	@RequestMapping(value ="/hello")
+	@RequestMapping(value ="/greeting")
 	public String greet(Model model) {
 		model.addAttribute("greeting", "Hello There");
-		return "hello.jsp";
+		return "hello";
 	}
 
 }
